@@ -36,6 +36,29 @@ body{
     color: aliceblue;
 
 }
+
+.Social{
+    display: grid;
+    place-items: center;
+    padding: 3px;
+    flex-direction: column;
+    gap: 10px;
+}
+.Social p{
+    color: gray;
+    font-weight: 100;
+}
+.Social ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.Social ul li a{
+   text-decoration: none;  
+   color: aliceblue;
+   font-size: 1.5rem;
+}
 @media (width <= 480px){
     .container{
         width: 100%;
