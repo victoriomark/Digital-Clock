@@ -14,18 +14,18 @@ let clock = () => {
     let seconds = date.getSeconds() 
     Men.innerHTML = minutes;
     //check if am or pm
- let AM_PM = hour > 12 ?  "AM":  "PM"
+ let AM_PM = hour < 12 ?  "AM":  "PM";
  ampm.innerHTML = AM_PM
     let SecInterval = setInterval(() =>{
         seconds++
         second.innerHTML = seconds
         if(seconds === 60){
-            seconds=0
+            seconds = "0"+0
             minutes++;
             Men.innerHTML = minutes;
          }
          if(minutes === 60){
-            minutes = 0
+            minutes =  0
             hour++;
             hours.innerHTML = hour;
          }
@@ -34,6 +34,5 @@ let clock = () => {
 }
 
 clock()
-
 
 
